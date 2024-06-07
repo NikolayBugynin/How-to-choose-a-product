@@ -211,6 +211,7 @@
   max-width: 680px;
   margin: 48px 0;
   border-inline-start: 1px black solid;
+  padding-inline-start: 32px;
 }
 
 .blockquote__conteiner {
@@ -220,7 +221,7 @@
 }
 
 .blockquote__discription {
-  max-width: 647px;
+  max-width: 100%;
 }
 
 .blockquote__author {
@@ -346,10 +347,7 @@
   .blockquote {
     margin-block-start: 55px;
     margin-block-end: 28px;
-  }
-
-  .blockquote__discription {
-    max-width: 591px;
+    padding-inline-start: 16px;
   }
 }
 
@@ -414,9 +412,5 @@
 
   .blockquote {
     margin-block-start: 30px;
-  }
-
-  .blockquote__discription {
-    max-width: 271px;
   }
 }
