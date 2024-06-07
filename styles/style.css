@@ -1,0 +1,422 @@
+/* Основные стили проекта. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 68px 0;
+  color: var(--text-color, #000000);
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font-size, 17px);
+  background-color: var(--background-color, #fff);
+}
+
+.section__title {
+  margin-block-end: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+}
+
+/* стиль блока, где мы ограничиивем ширину контента до 680px*/
+.text-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.section__text {
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.section__text-accent {
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.arctic {
+  margin-block-end: 48px;
+}
+
+.arctic__image {
+  width: 100%;
+  margin-block-start: 48px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.arctic__image-description {
+  max-width: 680px;
+  margin-block-start: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.section__list-title {
+  margin-block-start: 20px;
+  font-weight: 700;
+  font-size: var(--font-size, 17px);
+  line-height: 26px;
+}
+
+.section__list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-block-start: 12px;
+  padding-inline-start: 30px;
+}
+
+.section__list-item {
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+/* стиль блока, где элементы выстраиваются в ряд, на всю ширину страницы */
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-start: 18px;
+  margin-block-end: 20px;
+}
+
+.section__text-wildberries {
+  max-width: 264px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.link {
+  color: var(--link-color, #0068ff);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-experience {
+  position: relative;
+  max-width: 680px;
+  margin-block-end: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 26px 32px;
+}
+
+.section__title-experience {
+  margin-block-end: 16px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.link-experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link__experience-text {
+  max-width: 510px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.section__title-experience-accent {
+  border-bottom: 1px solid #cccccc;
+}
+
+.section-experience::before {
+  content: url(../images/yellow-arrow.png);
+  position: absolute;
+  inset-inline-end: 54px;
+  inset-block-start: 0;
+}
+
+.section__experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__experience-list :last-child {
+  max-width: inherit;
+  text-align: center;
+}
+
+.section__experience-item {
+  border-block-start: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+}
+
+.experience-img {
+  width: 90px;
+  height: 48px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.factory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.link-factory {
+  grid-row: 1/3;
+  grid-column-start: 2;
+}
+
+.factory__image {
+  width: 264px;
+  height: 140px;
+  margin-block-start: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.factory__description {
+  max-width: 264px;
+  margin-block-start: 7px;
+  padding-inline-end: 60px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.link-container-facory {
+  display: grid;
+  grid-template-columns: 680px 1fr;
+  grid-template-rows: repeat(2, 100px);
+  margin-block-end: 25px;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 680px;
+  margin: 48px 0;
+  border-inline-start: 1px black solid;
+}
+
+.blockquote__conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blockquote__discription {
+  max-width: 647px;
+}
+
+.blockquote__author {
+  display: flex;
+}
+
+.blockquote__author-avatar {
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.blockquote__author-name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.blockquote__author-job {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+@media (width < 1440px) {
+  .page {
+    align-items: center;
+    gap: 23px;
+    padding: 40px 80px;
+  }
+
+  .section__title {
+    margin-block-end: 10px;
+    font-size: 24px;
+  }
+
+  .text-conteiner {
+    gap: 16px;
+  }
+
+  .arctic {
+    margin-block-end: 28px;
+  }
+
+  .arctic__image {
+    position: relative;
+    margin-block-start: 30px;
+    inline-size: calc(100% + 160px);
+    inset-inline-end: 80px;
+  }
+
+  .arctic__image-description {
+    margin-block-start: 0;
+  }
+
+  .section__list-title {
+    margin-block-start: 16px;
+  }
+
+  .link-container {
+    flex-direction: column;
+    gap: 16px;
+    align-self: center;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+  }
+
+  .link-container-facory {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .section__text-wildberries {
+    max-width: 380px;
+    margin-inline-start: 44px;
+    line-height: 18px;
+  }
+
+  .section__title-experience {
+    margin-block-start: 5px;
+    font-size: 19px;
+  }
+
+  .section-experience::before {
+    inset-inline-end: 40px;
+  }
+
+  .section__experience-list :last-child {
+    max-width: inherit;
+    text-align: left;
+  }
+
+  .section-experience {
+    margin-block-end: 20px;
+  }
+
+  .section__title-kitchen {
+    margin-block-end: 15px;
+    line-height: 25px;
+  }
+
+  .factory {
+    align-items: flex-start;
+    padding-inline-start: 32px;
+  }
+
+  .factory__image {
+    width: 190px;
+    height: 100px;
+    margin-block-start: 0px;
+  }
+
+  .factory__description {
+    max-width: 314px;
+    padding-inline-end: 0;
+  }
+
+  .blockquote {
+    margin-block-start: 55px;
+    margin-block-end: 28px;
+  }
+
+  .blockquote__discription {
+    max-width: 591px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .page {
+    gap: 32px;
+    padding: 48px 16px;
+  }
+
+  .section__title {
+    margin-block-end: 16px;
+    line-height: 24px;
+  }
+
+  .arctic__image {
+    inline-size: calc(100% + 32px);
+    inset-inline-end: 16px;
+  }
+
+  .section__text-wildberries {
+    max-width: 170px;
+    margin-inline-start: 32px;
+  }
+
+  .experience-img {
+    display: none;
+  }
+
+  .section__experience-item:nth-child(4n + 1) {
+    display: none;
+  }
+
+  .section-experience {
+    margin-block-end: 16px;
+    padding: 7px 16px 18px;
+    overflow: hidden;
+  }
+
+  .section__experience-list {
+    gap: 21px;
+  }
+
+  .link__experience-text {
+    max-width: 256px;
+  }
+
+  .section-experience::before {
+    inset-inline-end: -80px;
+    inset-block-start: -10px;
+  }
+
+  .factory__image {
+    width: 169px;
+    height: 88px;
+  }
+
+  .factory__description {
+    max-width: 146px;
+    margin-block-start: 10px;
+    line-height: 18px;
+  }
+
+  .blockquote {
+    margin-block-start: 30px;
+  }
+
+  .blockquote__discription {
+    max-width: 271px;
+  }
+}

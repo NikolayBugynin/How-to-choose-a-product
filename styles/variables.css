@@ -1,0 +1,11 @@
+/*
+  Переменные проекта
+*/
+
+:root {
+  --background-color: #fff;
+  --text-color: #000000;
+  --link-color: #0068ff;
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 17px;
+}
