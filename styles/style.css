@@ -269,9 +269,6 @@
 
   .arctic {
     margin-block-end: 28px;
-  }
-
-  .arctic__image {
     position: relative;
     margin-block-start: 30px;
     inline-size: calc(100% + 160px);
@@ -279,6 +276,7 @@
   }
 
   .arctic__image-description {
+    padding: 0 80px;
     margin-block-start: 0;
   }
 
@@ -362,9 +360,13 @@
     line-height: 24px;
   }
 
-  .arctic__image {
+  .arctic {
     inline-size: calc(100% + 32px);
     inset-inline-end: 16px;
+  }
+
+  .arctic__image-description {
+    padding: 0 16px;
   }
 
   .section__text-wildberries {
